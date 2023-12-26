@@ -1,0 +1,109 @@
+body {
+    direction: rtl;
+    background-color: #000 !important;
+}
+
+.card {
+    overflow: hidden;
+
+}
+
+h2 {
+    transform: translateX(10rem) translateY(4rem);
+    position: absolute;
+    color: white;
+    z-index: 1;
+}
+
+.backgroundself {
+    z-index: 0;
+    transform: translateY(-26.7rem);
+    position: absolute;
+    width: 100%;
+    height: 220px;
+
+    background-image: linear-gradient(to bottom, rgba(5, 5, 5, 0.576), rgba(255, 255, 255, 0));
+}
+
+.card:hover h2 {
+    transform: translateX(-1rem) translateY(4rem);
+    transition: 0.5s;
+}
+
+.card:hover .backgroundself {
+    transform: translateY(-13.7rem);
+    transition: 0.5s;
+}
+
+.innera {
+    z-index: 1;
+    position: absolute;
+    height: 25px;
+    width: 50px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    transform: translateX(-18rem) translateY(10rem);
+}
+
+.card:hover .innera {
+    transform: translateX(-14rem) translateY(10rem);
+    transition: 0.5s;
+
+}
+
+.shadow1 {
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        background: linear-gradient(45deg,
+                #fb0094,
+                #0000ff,
+                #00ff00,
+                #ffff00,
+                #ff0000,
+                #fb0094,
+                #0000ff,
+                #00ff00,
+                #ffff00,
+                #ff0000);
+        background-size: 400%;
+        z-index: -1;
+        animation: shadow1 20s linear infinite;
+    }
+
+    &:after {
+        top: -8px;
+        left: -8px;
+        width: calc(100% + 16px);
+        height: calc(100% + 16px);
+        filter: blur(24px);
+        opacity: 0.9;
+    }
+}
+
+
+
+
+
+@keyframes shadow1 {
+    0% {
+        background-position: 0 0;
+    }
+
+    50.01% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}

@@ -1,0 +1,304 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url(../Font/Inter-Regular.ttf) format("ttf");
+}
+body {
+  background-color: #f6f6f6;
+  font-family: "inter";
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 900px;
+  height: 60%;
+  position: relative;
+}
+
+.mostatil {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  box-shadow: 1px 1px 15px 2px rgba(0, 38, 255, 0.237);
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.mostatil .mostatilchap {
+  width: 50%;
+  height: 100%;
+  border-radius: 30px;
+  background-image: linear-gradient(to top, rgb(49, 44, 235), rgb(103, 67, 255));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mostatil .mostatilrast {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mostatil .mostatilrast .divinner {
+  margin: 0 auto;
+  width: 70%;
+  height: 50px;
+  margin: 10px 0px;
+  padding: 0 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mostatilabi {
+  background-color: #f3f3fd;
+}
+
+.mostatilghermez {
+  background-color: #fff6f5;
+}
+
+.mostatilsabz {
+  background-color: #f2fbfa;
+}
+
+.mostatilzard {
+  background-color: #fffbf2;
+}
+
+.summary {
+  width: 70%;
+  margin: 30px 0px 10px 0px;
+  font-weight: 900;
+  color: #5b5d70;
+}
+
+button {
+  width: 70%;
+  padding: 17px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin: 30px 0;
+  border: 1px solid black;
+  background-color: #303b59;
+  color: white;
+  transition: 0.5s;
+}
+
+.mostatil .mostatilchap {
+  padding: 10px 10px;
+}
+
+.mostatilchap .circul1 {
+  width: 210px;
+  height: 200px;
+  margin: 30px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, rgba(255, 0, 0, 0), rgb(74, 36, 207));
+  border-radius: 100px;
+}
+
+.biggers {
+  text-align: center;
+  color: white;
+  font-size: 2.9em;
+}
+
+.smallers {
+  color: white;
+  font-size: 1.1em;
+}
+
+.great {
+  margin-top: 40px;
+  font-size: 1.5em;
+}
+
+.you {
+  margin: 10px 0px;
+  width: 70%;
+  font-size: 0.9em;
+  text-align: center;
+  text-justify: auto;
+}
+
+button:hover {
+  color: black;
+  background-color: #ffffff;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+
+.animation {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  animation: cube infinite ease-in-out 15s;
+  z-index: 0;
+}
+
+.mostatil {
+  z-index: 1;
+  position: relative;
+}
+
+@keyframes cube {
+  0% {
+    background-color: red;
+    border-radius: 50px;
+    top: -100px;
+    left: 415px;
+  }
+  10% {
+    background-color: red;
+    border-radius: 50px;
+    top: 250px;
+    left: 415px;
+  }
+  20% {
+    background-color: yellow;
+    border-radius: 50px;
+    top: 600px;
+    left: 415px;
+  }
+  30% {
+    background-color: yellow;
+    border-radius: 50px;
+    top: 250px;
+    left: 415px;
+  }
+  40% {
+    background-color: blue;
+    border-radius: 50px;
+    top: 250px;
+    left: -150px;
+  }
+  50% {
+    background-color: blue;
+    border-radius: 50px;
+    top: 250px;
+    left: 415px;
+  }
+  60% {
+    background-color: green;
+    border-radius: 50px;
+    top: 250px;
+    left: 990px;
+  }
+  70% {
+    background-color: green;
+    border-radius: 50px;
+    top: 250px;
+    left: 415px;
+  }
+  80% {
+    background-color: red;
+    border-radius: 50px;
+    top: 250px;
+    left: 415px;
+  }
+  90% {
+    background-color: red;
+    border-radius: 50px;
+    top: 250px;
+    left: 415px;
+  }
+  100% {
+    background-color: red;
+    border-radius: 50px;
+    top: -100px;
+    left: 415px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 760px) {
+  .container {
+    width: 700px;
+  }
+  .mostatilchap .circul1 {
+    width: 190px;
+    height: 190px;
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0), rgb(74, 36, 207));
+    border-radius: 100px;
+  }
+  .animation {
+    display: none;
+  }
+}
+@media (max-width: 480px) and (min-width: 360px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+  .mostatil {
+    border-radius: 0px;
+    flex-direction: column-reverse;
+  }
+  .mostatil .mostatilchap {
+    width: 100%;
+    height: 50%;
+    border-radius: 0px 0px 30px 30px;
+  }
+  .mostatil .mostatilrast {
+    width: 100%;
+    height: 50%;
+  }
+  .summary {
+    text-align: center;
+  }
+  .animation {
+    display: none;
+  }
+}
+@media (max-width: 759px) and (min-width: 481px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+  .mostatil {
+    border-radius: 0px;
+    flex-direction: column-reverse;
+  }
+  .mostatil .mostatilchap {
+    width: 100%;
+    height: 50%;
+    border-radius: 0px 0px 30px 30px;
+  }
+  .mostatil .mostatilrast {
+    width: 100%;
+    height: 50%;
+  }
+  .animation {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

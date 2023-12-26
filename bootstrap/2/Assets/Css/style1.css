@@ -1,0 +1,20 @@
+body {
+  direction: rtl;
+}
+
+.accordion-button::after {
+  margin-right: auto;
+  margin-left: initial !important;
+  }
+
+
+
+
+  .alert-dismissible .btn-close {
+    left: 0;
+    right: initial !important;
+  }
+
+  .alert-dismissible {
+    padding-right: 1rem !important;
+}

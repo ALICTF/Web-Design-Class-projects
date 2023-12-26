@@ -1,0 +1,141 @@
+body {
+    direction: rtl;
+    background: linear-gradient(0deg, #000, #262626) !important;
+}
+.card-body{
+    background: linear-gradient(5deg, #000, #303030) !important;
+    color: rgb(213, 213, 213);
+    border-radius: 0px 0px 20px 20px !important;
+}
+.card{
+    background: linear-gradient(5deg, #000, #303030) !important;
+    border-radius: 20px !important;
+    border: 0.5px solid rgb(49, 49, 49)!important;
+    text-align: center;
+    box-shadow: 1px 1px 15px 1px #303030;
+}
+h2 {
+    transform: translateX(10rem) translateY(1rem);
+    position: absolute;
+    color: white;
+    transition: 0.5s;
+    z-index: 1;
+
+}
+.backgroundself {
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    background-image: linear-gradient(to bottom, rgba(5, 5, 5, 0.576), rgba(255, 255, 255, 0));
+    top:-10rem;
+    transition: 0.5s;
+}
+.card:hover h2 {
+    transform: translateX(-1rem) translateY(1rem);
+    transition: 0.5s;
+}
+.card:hover .backgroundself {
+    top:0rem;
+    transition: 0.5s;
+}
+.innerimg{
+    border-radius: 20px 20px 0px 0px !important;
+    overflow: hidden;
+    position: relative;
+}
+.innera {
+    position: absolute;
+    bottom: -2.2rem;
+    left: 1rem;
+    height: 25px;
+    width: 50px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #0d6efd;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+
+}
+.card:hover .innera {
+    bottom: 1rem;
+    left: 1rem;
+    transition: 0.5s;
+    box-shadow: none !important;
+}
+.innera:hover{
+    background-color: white;
+    color: #0d6efd;
+
+}
+.card:hover .shadow1::before,
+.card:hover.shadow1:after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -2px;
+    width: calc(100% + 50px);
+    height: calc(100% + 50px);
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    z-index: -1;
+    animation: shadow 15s linear infinite;
+}
+.card:hover.shadow1:after {
+    top: -8px;
+    left: -8px;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+    filter: blur(24px);
+    opacity: 0.9;
+}
+.bn13 {
+    transition: all 0.2s;
+    animation: bn13bouncy 5s infinite linear;
+    position: relative;
+}
+
+.bn13:hover {
+    background-color: white;
+    color: #000000;
+}
+@keyframes bn13bouncy {
+    0% {
+    top: 0em;
+    }
+    40% {
+    top: 0em;
+    }
+    43% {
+    top: -0.9em;
+    }
+    46% {
+    top: 0em;
+    }
+    48% {
+    top: -0.4em;
+    }
+    50% {
+    top: 0em;
+    }
+    100% {
+    top: 0em;
+    }
+}
+@keyframes shadow {
+    0% {
+        background-position: 0 0;
+    }
+
+    50.00% {
+        background-position: 200% 0;
+
+    }
+
+    100% {
+        background-position: 0 0;
+
+    }
+}
+
+/*# sourceMappingURL=style3.css.map */

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/Css/style_Secound.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script src="https://kit.fontawesome.com/e22bc23de4.js" crossorigin="anonymous"></script>
+    <title>Project number 2</title>
+</head>
+<body>
+    <div class="check">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+    
+    <div class="sidebar">
+        <header>My projects</header>
+        <ul>
+            <li ><a href="First.html" style="color: green"><i class="fas fa-unlock"></i> heading & img</a></li>
+            <li ><a href="Secound.html" style="color: green"><i class="fas fa-unlock"></i> Forms and input</a></li>
+            <li ><a href="Third.html" style="color: green"><i class="fas fa-unlock"></i> First Css</a></li>
+            <li><a href="Fourth.html" style="color: green"><i class="fas fa-unlock"></i> navbar</a></li>
+            <li ><a href="#" style="color: red"><i class="fas fa-lock"></i> Project no 5</a></li>
+            <li ><a href="#" style="color: red"><i class="fas fa-lock"></i> Project no 6</a></li>
+            <li ><a href="#" style="color: red"><i class="fas fa-lock"></i> Project no 7</a></li>
+            <li ><a href="#" style="color: red"><i class="fas fa-lock"></i> Project no 8</a></li>
+        </ul>
+    </div>
+    <section dir="rtl">
+        <div class="form_table">
+            <form action="register.php" method="post">
+                <table>
+                        <tr class="username">
+                            <td><label for="username"   class="username_label">نام  :</label></td>
+                            <td><input type="text" id="username" name ="username" placeholder=" نام کاربری را وارد کنید" class="username_input"></td>
+                        </tr>
+                        <tr class="email">
+                            <td><label for="email" class="email">ایمیل :</label></td>
+                            <td><input type="email" id="email" name="email" placeholder=" ایمل خود را وارد کنید" class="email_input"></td>
+                        </tr>
+                        <tr class="password">    
+                            <td><label for="pass" class="password_label">پسورد : </label></td>
+                            <td><input type="password" id="pass" name="pass"  placeholder=" رمز خود را وارد کنید" class="password_input"></td>
+                        </tr>
+                        <tr class="gender">
+                            <td><label class="gender_label"> جنسیت :</label></td>
+                            <td>
+                                <label for="man" class="gender_label_man">مرد</label>
+                                <input type="radio" name="gender" id="man" value="man" class="gender_radio_man">
+                                <label for="woman" class="gender_label_woman">زن</label>
+                                <input type="radio" name="gender" id="woman" value="woman" class="gender_radio_woman">
+                            </td>
+                        </tr> 
+                        <tr class="city_selection">
+                            <td ><label class="city_selection_label" >شهر :</label></td>
+                            <td>
+                                <select name="city" class="city_selection_option">
+                                    <option value="1">مشهد</option>
+                                    <option value="2">تهران</option>
+                                    <option value="3">شیراز</option>
+                                    <option value="4">اصفهان</option>
+                                    <option value="5">بیرجند</option>
+                                    <option value="6">اردبیل</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>  
+                            <td></td>
+                            <td><input type="submit" value="ارسال" class="submit_btn"></td>
+                        </tr>
+                </table>
+            </form>
+        </div>
+    </section>
+<script src="Assets/JS/script.js"></script>
+</body>
+</html>

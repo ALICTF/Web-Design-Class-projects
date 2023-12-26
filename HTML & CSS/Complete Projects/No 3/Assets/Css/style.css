@@ -1,0 +1,130 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url(/Assets/Font/Inter-Regular.ttf) format("ttf");
+}
+body {
+  width: 100%;
+  background-color: hsl(0, 0%, 95%);
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1024px;
+  height: 500px;
+}
+
+.rec {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  font-size: 1rem;
+  font-family: inter;
+  color: hsla(0, 2%, 88%, 0.993);
+  border-radius: 15px;
+  box-shadow: 1px 1px 15px 5px black;
+}
+
+.rec1 {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0px 0px 10px;
+  justify-content: space-around;
+}
+
+.rec2 {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(184, 100%, 22%);
+  justify-content: space-around;
+}
+
+.rec3 {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 10px 10px 0px;
+  justify-content: space-around;
+}
+
+p {
+  margin: 0px 40px 0px 40px;
+  width: 60%;
+}
+
+img {
+  margin: 0px 40px 0px 40px;
+}
+
+h1 {
+  margin: 0px 40px 60px 40px;
+}
+
+a {
+  font-size: 15px;
+  font-weight: 800;
+  text-align: center;
+  margin: 30px 40px 30px 40px;
+  text-decoration: none;
+  background-color: hsla(0, 2%, 88%, 0.993);
+  width: 140px;
+  height: 50px;
+  border-radius: 100px;
+  padding: 15px 10px;
+}
+
+.rec2 a {
+  color: hsl(184, 100%, 22%);
+}
+
+.rec1 a {
+  color: hsl(31, 77%, 52%);
+}
+
+.rec3 a {
+  color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 480px) and (min-width: 360px) {
+  main {
+    width: 100%;
+    height: 100%;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .rec {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: none;
+    padding: 10px;
+  }
+  .rec1 {
+    border-radius: 0px;
+    padding: 10px;
+  }
+  .rec2 {
+    padding: 10px;
+  }
+  .rec3 {
+    border-radius: 0px;
+    padding: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

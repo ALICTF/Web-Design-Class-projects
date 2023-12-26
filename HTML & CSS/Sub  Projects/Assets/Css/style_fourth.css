@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: "tahoma" , sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background : #042331;
+    transition: all .5s ease;
+}
+.sidebar header {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+}
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px ;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,1);
+    border-bottom: 1px solid black ;
+    transition: .4s;
+}
+ul li:hover .sidea {
+    padding-left: 50px;
+}
+.sidebar ul a i{
+    margin-right: 16px;
+}
+
+#check{
+    display: none;
+}
+label #btn, label #cancel {
+    position: absolute;
+    cursor:pointer ;
+    background: #042331;
+}
+label #btn {
+    left: 40px;
+    top:90%;
+    font-size: 35px;
+    color: #0a5275;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 90%;
+    font-size: 30px;
+    color:red;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events:none ;
+}
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+#check:checked ~ section{
+    margin-left: 250px;
+}
+section {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+}
+
+nav{
+    width: auto;
+    height: 60px;
+    background-color: gold;
+    
+}
+nav .topnavul{
+    margin-top: 20px;
+    float: left;
+}
+nav .topnavul .topnavli {
+    float: left;
+    list-style: none;
+
+}   
+nav .topnavul .topnavli .topnava {
+    text-decoration: none;
+    padding: 20px 16.5px ;    
+    color: black;
+    transition: .5s;
+
+}
+nav .topnavul .topnavli .topnava:hover {
+    background-color: black;
+    padding:20px 16.5px ;
+    transition: .5s;
+    color: white;
+}   
+nav .topnavul .topnavli .nestul {
+    display: none;
+    position: absolute;
+    border: 1px solid  #042331;
+    background-color: #042331;
+    color: #042331;
+
+
+}
+nav .topnavul .topnavli:hover .nestul {
+    display: block;
+    list-style: none;
+    margin-top: 20px;
+    position: absolute;
+
+
+}
+nav .topnavul .topnavli .nestul .nestli {
+    padding: 20px;
+    text-align: left;
+
+
+}
+nav .topnavul .topnavli .nestul .nestli .nesta { 
+    text-decoration: none;   
+    color: white;
+}
+nav .topnavul .topnavli .nestul .nestli:hover { 
+    background-color:  #0c86bf;
+    transition: .5s;
+    margin: 0px;
+    
+}
+
+nav .topnavul .topnavli .nestul .nestli .nestnestul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top:118px;
+    left:116px;
+    background-color: #042331;
+}
+nav .topnavul .topnavli .nestul .nestli:hover .nestnestul{
+    display: block;
+    background-color: #042331;
+
+}
+nav .topnavul .topnavli .nestul .nestli:hover .nestnestul .nestnestli{
+    display: block;
+    background-color: #042331;
+    padding: 20px;
+
+}
+
+nav .topnavul .topnavli .nestul .nestli .nestnestul .nestnestli:hover{
+    background-color:  #0c86bf;
+    padding: 20px;
+    transition: 0.5s;
+
+}
+
+nav .topnavul .topnavli .nestul .nestli:hover .nestnestul .nestnestli .nestnesta{
+    color: white;
+    padding: 20px;
+
+}
+
+

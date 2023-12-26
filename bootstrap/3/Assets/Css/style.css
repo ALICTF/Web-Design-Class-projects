@@ -1,0 +1,64 @@
+body {
+  direction: rtl;
+  background-color: #f6f6f6 !important;
+}
+
+ul{
+  padding-right: 0px ;
+}
+.col-6 {
+  padding: 30px;
+  border: 2px solid rgb(61, 57, 163);
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+strong {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.modal-header {
+  justify-content: space-between;
+}
+
+.modal-header .btn-close {
+  margin: initial !important;
+}
+
+.bn13 {
+  transition: all 0.2s;
+  animation: bn13bouncy 5s infinite linear;
+  position: relative;
+}
+
+.bn13:hover {
+  background-color: white;
+  color: #000000;
+}
+@keyframes bn13bouncy {
+  0% {
+  top: 0em;
+  }
+  40% {
+  top: 0em;
+  }
+  43% {
+  top: -0.9em;
+  }
+  46% {
+  top: 0em;
+  }
+  48% {
+  top: -0.4em;
+  }
+  50% {
+  top: 0em;
+  }
+  100% {
+  top: 0em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
