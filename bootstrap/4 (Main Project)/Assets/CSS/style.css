@@ -15,4 +15,18 @@ body {
   direction: rtl;
 }
 
+header {
+  height: 450px;
+  background-image: url(../IMG/header.jpg);
+  background-size: cover;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.pattern-header {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 /*# sourceMappingURL=style.css.map */
