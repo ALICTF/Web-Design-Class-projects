@@ -1,3 +1,18 @@
-
+@font-face {
+  font-family: "IR-Yek-r";
+  src: url(../Font/iranyekanwebregular.ttf) format("ttf");
+  src: url(../Font/iranyekanwebregular.eot) format("eot");
+  src: url(../Font/iranyekanwebregular.woff) format("woff");
+}
+@font-face {
+  font-family: "IR-Yek-b";
+  src: url(../Font/iranyekanwebbold.ttf) format("ttf");
+  src: url(../Font/iranyekanwebbold.eot) format("eot");
+  src: url(../Font/iranyekanwebbold.woff) format("woff");
+}
+body {
+  font-family: "IR-Yek-r" !important;
+  direction: rtl;
+}
 
 /*# sourceMappingURL=style.css.map */
