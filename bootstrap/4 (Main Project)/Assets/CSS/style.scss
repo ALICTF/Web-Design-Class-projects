@@ -16,15 +16,15 @@ header {
 .pattern-header {
     background-color: rgba(0, 0, 0, 0.5);
 }
-.nav-link:hover {
-    color: rgb(13, 202, 240) !important;
-}
-a {
+
+
+.aa {
+    width: fit-content;
     display: block;
     position: relative;
     padding: 0.2em 0;
 }
-a::after {
+.aa::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -35,12 +35,19 @@ a::after {
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
 }
-li a::after {
+li .aa::after {
     opacity :1;
     transform: scale(0);
     transform-origin: center;
 }
 
-li a:hover::after,
-li a:focus::after {
+li .aa:hover::after,
+li .aa:focus::after {
     transform: scale(1);}
+
+li a i {
+    cursor: pointer;
+}
+li a i:hover {
+    cursor: pointer;
+}
