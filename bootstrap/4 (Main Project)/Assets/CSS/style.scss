@@ -1,19 +1,46 @@
-@import  "fontface" ;
-@import "_colors" ;
+@import "fontface";
+@import "_colors";
 
 body {
-    font-family: "IR-Yek-r" !important ;
+    font-family: "IR-Yek-r" !important;
     direction: rtl;
 }
-header{
+header {
     height: 450px;
-    background-image: url(../IMG/header.jpg);
+    background-image: url(../IMG/Bg-header.jpg);
     background-size: cover;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.pattern-header {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.nav-link:hover {
+    color: rgb(13, 202, 240) !important;
+}
+a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+}
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: rgb(13, 202, 240);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+li a::after {
+    opacity :1;
+    transform: scale(0);
+    transform-origin: center;
+}
 
-}
-.navbar{
-    background-color: rgba(0,0,0,0.7) ;
-}
-.pattern-header{
-    background-color: rgba(0,0,0,0.5) ;
-}
+li a:hover::after,
+li a:focus::after {
+    transform: scale(1);}
