@@ -93,21 +93,76 @@
 // }
 
 
-// x,y opperand +,-,/,*
+// x, y opperand +, -, /,*
 // x = Number(prompt("enter the first number :"))
 // y = Number(prompt("enter the secound number :"))
 // opper = prompt("enter your oprator :(+ or / or - or * )")
 
-// if (opper == "+"){
-//     alert(x+y)
-// }else if (opper == "-"){
-//     alert(x-y)
-// }else if (opper == "*"){
-//     alert(x*y)
-// }else if (opper == "/"){
-//     alert(x/y)
-// }else {
+// if (opper == "+") {
+//     alert(x + y)
+// } else if (opper == "-") {
+//     alert(x - y)
+// } else if (opper == "*") {
+//     alert(x * y)
+// } else if (opper == "/") {
+//     alert(x / y)
+// } else {
 //     alert("please enter correct value")
 // }
 
+//ternary oprator
+// let x = Number(prompt("adad ro vared konid : " , "example : 12"))
+// let result = x>18 === true ? alert("go to uni ...") : alert("go to home ...") 
+// console.log(result);
 
+
+//for loop
+// let x = Number(prompt("adad ro vared konid : " ))
+// for(let a = 1 ;a<=x;a+=2 ){
+//     alert(`${a}hiiiiiii`)
+// }
+
+// let x = Number(prompt("adad ro vared konid : " ))
+// for(let a = 1 ;a<=x;a+=2 ){
+//     if (a%2==0){
+//         alert(`${a} adad zoje`)
+//     }else{
+//         alert(`${a} adad farde`)
+//     }
+// }
+
+// let x = Number(prompt("adad ro vared konid : " ))
+// for(let a=1;a<=x;a++ ){
+//     if (a%100==0){
+//         document.write(`<div style='width:100px; height=100px;background-color:pink; display:inline-block; margin:5px 5px ; text-align:center;'><h1>${a}</h1></div>`)
+//     }else{
+//         document.write(`<div style='width:100px; height=100px;background-color:gray; display:inline-block; margin:5px 5px ; text-align:center;'><h1>${a}</h1></div>`)
+//     }
+// }
+
+// let x = Number(prompt("adad ro vared konid : " ))
+// let a = 1
+// for(;a<=x;){
+//     if (a%2==0){
+//         document.write(`<div style='width:100px; height=100px;background-color:pink; display:inline-block; margin:5px 5px ; text-align:center;'><h1>${a}</h1></div>`)
+//     }else{
+//         document.write(`<div style='width:100px; height=100px;background-color:gray; display:inline-block; margin:5px 5px ; text-align:center;'><h1>${a}</h1></div>`)
+//     }
+//     a++
+// }
+
+// for(;;)
+// for(;true;)
+
+
+// While
+let x = Number(prompt("adad ro vared konid : " ))
+let a = 1
+while (a<=x){
+    if (a%2==0){
+        document.write(`<div style='width:100px; height=100px;background-color:pink; display:inline-block; margin:5px 5px ; text-align:center;'><h1>${a}</h1></div>`)
+    }else{
+        document.write(`<div style='width:100px; height=100px;background-color:gray; display:inline-block; margin:5px 5px ; text-align:center;'><h1>${a}</h1></div>`)
+    }
+    a++
+}
