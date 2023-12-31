@@ -66,3 +66,30 @@ p{
     background: url(./../IMG/Shape1.png) no-repeat top right;
     background-position-y: 300px ;
 }
+.mt-custom{
+    margin-top: 150px !important;
+}
+
+.w-custom{
+width: 75%;
+}
+
+
+@media (max-width:1024px){
+    .w-custom{
+        width: 100%;
+    }
+    #main-pattern{
+        background: none;
+    }
+    #main-pattern .text-white{
+        color: #000 !important;
+    }
+    .mt-custom{
+        margin-top: 20px;
+    }
+    #main-pattern .btn-light.text-info{
+        background-color: rgb(13, 202, 240);
+        color: #fff !important;
+    }
+}
