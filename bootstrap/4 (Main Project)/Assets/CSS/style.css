@@ -21,6 +21,14 @@ header {
   background-size: cover;
 }
 
+.text-12 {
+  font-size: 12px;
+}
+
+.text-14 {
+  font-size: 14px;
+}
+
 .navbar {
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -69,6 +77,15 @@ li a i {
 
 li a i:hover {
   cursor: pointer;
+}
+
+p {
+  line-height: 1.8rem;
+}
+
+#main-pattern {
+  background: url(./../IMG/Shape1.png) no-repeat top right;
+  background-position-y: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */
