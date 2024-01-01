@@ -96,6 +96,10 @@ p {
   width: 75%;
 }
 
+.w-custom2 {
+  width: fit-content;
+}
+
 @media (max-width: 1024px) {
   .w-custom {
     width: 100%;
