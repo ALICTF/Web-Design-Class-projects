@@ -92,12 +92,27 @@ p {
   margin-top: 150px !important;
 }
 
+footer {
+  height: 650px;
+  background-image: url(../IMG/Hue_Saturation1.png);
+  background-size: cover;
+}
+
+.pattern-footer {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .w-custom {
   width: 75%;
 }
 
 .w-custom2 {
   width: fit-content;
+}
+
+.copy-right {
+  background-color: #000;
+  height: 150px;
 }
 
 @media (max-width: 1024px) {
