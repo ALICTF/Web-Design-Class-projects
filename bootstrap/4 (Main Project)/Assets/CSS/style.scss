@@ -89,7 +89,7 @@ p {
 }
 
 footer {
-    height: 650px;
+    height: 450px;
     background: url(../IMG/footerimg.jpg) no-repeat center;
     background-size: cover;
 }
@@ -106,11 +106,14 @@ footer {
     width: fit-content;
 }
 
-.copy-right {
-    background-color: #000;
-    height: 150px;
+::placeholder{
+    color: #a8a6a6 !important;
+    font-size: small;
 }
 
+.form-control{
+    border: 1px solid #5e5f5f !important;
+}
 .pattern-gallery1 {
     background: url(../IMG/hover1.jpg) no-repeat center;
     background-size: cover;
@@ -136,7 +139,18 @@ footer {
 }
 .pattern-gallery{
     background-color: rgba($color: #000000, $alpha: .7);
+    transition: 0.5s;
 }
+#main-gallery .col-lg-3:hover .pattern-gallery{
+    background-color: rgba($color: #158db1, $alpha: .7);
+    transition: 0.5s;
+
+}
+.copy-right {
+    background-color: #000;
+    height: 80px;
+}
+
 @media (max-width:1024px) {
     .w-custom {
         width: 100%;
