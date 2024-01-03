@@ -139,16 +139,33 @@ footer {
 }
 .pattern-gallery{
     background-color: rgba($color: #000000, $alpha: .7);
-    transition: 0.5s;
+    transition:  ease-in-out .5s;
 }
 #main-gallery .col-lg-3:hover .pattern-gallery{
     background-color: rgba($color: #158db1, $alpha: .7);
-    transition: 0.5s;
+    transition:  ease-in-out .5s;
+    cursor: pointer;
 
 }
 .copy-right {
     background-color: #000;
-    height: 80px;
+    height: auto;
+    
+}
+
+.copy-right .col-lg-4 li {
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+}
+.copy-right .col-lg-4 li:hover {
+    color: #26b4df;
+    transition: 0.5s;
+}
+textarea {
+    resize: none !important;
 }
 
 @media (max-width:1024px) {
@@ -165,11 +182,14 @@ footer {
     }
 
     .mt-custom {
-        margin-top: 20px;
+        margin-top: 60px !important;
     }
 
     #main-pattern .btn-light.text-info {
         background-color: rgb(13, 202, 240);
         color: #fff !important;
+    }
+    footer {
+        height: auto;
     }
 }
