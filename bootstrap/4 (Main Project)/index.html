@@ -13,8 +13,8 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark ">
         <div class="container position-relative">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#menu-phone" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -58,7 +58,7 @@
             </div>
             <div class="row mt-5">
                 <div class="col-lg-3 col-md-6 col-sm-6 text-sm-end text-center">
-                    <i class="fa fa-desktop fa-3x text-info"></i>
+                    <i class="fa fa-chart-line fa-3x text-info"></i>
                     <h4 class="my-4">لورم ایپسوم</h4>
                     <p class="text-14 text-secondary">لورم ساز مناسب برای طراحان سایت و طراحان گرافیک برای پر کردن فضای
                         خالی.لورم ساز
@@ -66,7 +66,7 @@
                         سایت و طراحان گرافیک برای پر کردن فضای خالی</p>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 text-sm-end text-center">
-                    <i class="fa fa-desktop fa-3x text-info"></i>
+                    <i class="fa fa-lightbulb fa-3x text-info"></i>
                     <h4 class="my-4">لورم ایپسوم</h4>
                     <p class="text-14 text-secondary">لورم ساز مناسب برای طراحان سایت و طراحان گرافیک برای پر کردن فضای
                         خالی.لورم ساز
@@ -74,7 +74,7 @@
                         سایت و طراحان گرافیک برای پر کردن فضای خالی</p>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 text-sm-end text-center">
-                    <i class="fa fa-desktop fa-3x text-info"></i>
+                    <i class="fa fa-lock  fa-3x text-info"></i>
                     <h4 class="my-4">لورم ایپسوم</h4>
                     <p class="text-14 text-secondary">لورم ساز مناسب برای طراحان سایت و طراحان گرافیک برای پر کردن فضای
                         خالی.لورم ساز
@@ -82,7 +82,7 @@
                         سایت و طراحان گرافیک برای پر کردن فضای خالی</p>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 text-sm-end text-center">
-                    <i class="fa fa-desktop fa-3x text-info"></i>
+                    <i class="fa fa-calculator fa-3x text-info"></i>
                     <h4 class="my-4">لورم ایپسوم</h4>
                     <p class="text-14 text-secondary">لورم ساز مناسب برای طراحان سایت و طراحان گرافیک برای پر کردن فضای
                         خالی.لورم ساز
@@ -240,12 +240,12 @@
                             <h3 class="d-inline-block text-info"> farsian@gmail.com </h2>
                         </h5>
                     </div>
-                    <div class="d-inline ">
-                        <i class="fa fa-desktop bg-info p-3 text-white rounded-circle mx-1 mt-3"></i>
-                        <i class="fa fa-desktop bg-warning p-3 text-white rounded-circle mx-1 mt-3"></i>
-                        <i class="fa fa-desktop bg-danger p-3 text-white rounded-circle mx-1 mt-3"></i>
-                        <i class="fa fa-desktop bg-secondary p-3 text-white rounded-circle mx-1 mt-3"></i>
-                        <i class="fa fa-desktop bg-primary p-3 text-white rounded-circle mx-1 mt-3"></i>
+                    <div class="d-inline icons ">
+                        <a href="#"><i class="fa fa-paper-plane  bg-info p-3 text-white rounded-circle mx-1 mt-3 "></i></a>
+                        <a href="#"><i class="fa fa-gem bg-warning p-3 text-white rounded-circle mx-1 mt-3"></i></a>
+                        <a href="#"><i class="fa fa-thumbs-up bg-danger p-3 text-white rounded-circle mx-1 mt-3"></i></a>
+                        <a href="#"><i class="fa fa-store-alt bg-secondary p-3 text-white rounded-circle mx-1 mt-3"></i></a>
+                        <a href="#"><i class="fa fa-project-diagram  bg-primary p-3 text-white rounded-circle mx-1 mt-3"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-6 position-relative mt-5">
@@ -270,11 +270,11 @@
     <div class="container-fluid copy-right  ">
         <div class="container">
             <div class="row d-flex justify-content-between">
-                <div class="col-lg-4 order-1 order-lg-0">
-                    <p class="pt-4 text-white">تمامی حقوق محفوظ است</p>
+                <div class="col-lg-4 order-1 order-lg-0 ">
+                    <p class="pt-lg-4 text-secondary text-center text-lg-end">تمامی حقوق محفوظ است</p>
                 </div>
                 <div class="col-lg-4">
-                    <ul class="text-secondary p-4 d-flex justify-content-evenly">
+                    <ul class="text-secondary pt-3  p-lg-4 d-flex justify-content-evenly">
                         <li class="">خانه</li>
                         <li class="">ارتباط با ما</li>
                         <li class="">پروژه ها</li>
@@ -282,15 +282,37 @@
                 </div>
             </div>
         </div>
-
     </div>
 
 
 
 
 
-
-
+    <div class="offcanvas offcanvas-end" tabindex="" id="menu-phone" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">منوی سایت</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <ul class="navbar-nav p-0">
+                    <li class="nav-item">
+                        <a class="nav-link active aa px-5 text-center w-100 bg-info" aria-current="page" href="#">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active aa  px-5 text-center w-100 bg-info" href="#">درباره ما</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active aa px-5 text-center w-100 bg-info" href="#">تماس با ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active"><i class="fa fa-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <script src="Assets/JS/bootstrap.bundle.js"></script>
     <script src="Assets/JS/jquery-3.7.1.slim.min.js"></script>
     <script src="Assets/JS/script.js"></script>

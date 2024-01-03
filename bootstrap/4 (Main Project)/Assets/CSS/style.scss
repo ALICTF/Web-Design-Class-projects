@@ -56,6 +56,18 @@ h6 {
     transition: opacity 300ms, transform 300ms;
 }
 
+.offcanvas-body li {
+    display: flex;
+    justify-content: center;
+}
+
+.offcanvas-body li a {
+
+    color: #000 !important;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
 li .aa::after {
     opacity: 1;
     transform: scale(0);
@@ -106,14 +118,15 @@ footer {
     width: fit-content;
 }
 
-::placeholder{
+::placeholder {
     color: #a8a6a6 !important;
     font-size: small;
 }
 
-.form-control{
+.form-control {
     border: 1px solid #5e5f5f !important;
 }
+
 .pattern-gallery1 {
     background: url(../IMG/hover1.jpg) no-repeat center;
     background-size: cover;
@@ -137,20 +150,23 @@ footer {
     background-size: cover;
     height: 250px;
 }
-.pattern-gallery{
+
+.pattern-gallery {
     background-color: rgba($color: #000000, $alpha: .7);
-    transition:  ease-in-out .5s;
+    transition: ease-in-out .5s;
 }
-#main-gallery .col-lg-3:hover .pattern-gallery{
+
+#main-gallery .col-lg-3:hover .pattern-gallery {
     background-color: rgba($color: #158db1, $alpha: .7);
-    transition:  ease-in-out .5s;
+    transition: ease-in-out .5s;
     cursor: pointer;
 
 }
+
 .copy-right {
     background-color: #000;
     height: auto;
-    
+
 }
 
 .copy-right .col-lg-4 li {
@@ -160,12 +176,32 @@ footer {
     text-decoration: none;
     list-style: none;
 }
+
 .copy-right .col-lg-4 li:hover {
     color: #26b4df;
     transition: 0.5s;
 }
+
 textarea {
     resize: none !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0ae;
+
+    background-image: -webkit-gradient(linear, 0 0, 0 100%,
+            color-stop(.5, rgba(255, 255, 255, .2)),
+            color-stop(.5, transparent), to(transparent));
 }
 
 @media (max-width:1024px) {
@@ -189,6 +225,7 @@ textarea {
         background-color: rgb(13, 202, 240);
         color: #fff !important;
     }
+
     footer {
         height: auto;
     }
