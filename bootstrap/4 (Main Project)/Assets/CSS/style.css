@@ -17,7 +17,7 @@ body {
 
 header {
   height: 450px;
-  background-image: url(../IMG/header.jpg);
+  background-image: url(../IMG/background.jpg);
   background-size: cover;
 }
 
@@ -37,7 +37,12 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "IR-Yek-b" !important;
 }
 
@@ -84,7 +89,7 @@ p {
 }
 
 #main-pattern {
-  background: url(./../IMG/Shape1.png) no-repeat top right;
+  background: url(./../IMG/backabi.png) no-repeat top right;
   background-position-y: 300px;
 }
 
@@ -94,7 +99,7 @@ p {
 
 footer {
   height: 650px;
-  background-image: url(../IMG/Hue_Saturation1.png);
+  background: url(../IMG/footerimg.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -113,6 +118,34 @@ footer {
 .copy-right {
   background-color: #000;
   height: 150px;
+}
+
+.pattern-gallery1 {
+  background: url(../IMG/hover1.jpg) no-repeat center;
+  background-size: cover;
+  height: 250px;
+}
+
+.pattern-gallery2 {
+  background: url(../IMG/hover3.jpg) no-repeat center;
+  background-size: cover;
+  height: 250px;
+}
+
+.pattern-gallery3 {
+  background: url(../IMG/hover2.jpg) no-repeat center;
+  background-size: cover;
+  height: 250px;
+}
+
+.pattern-gallery4 {
+  background: url(../IMG/hover4.jpg) no-repeat center;
+  background-size: cover;
+  height: 250px;
+}
+
+.pattern-gallery {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 @media (max-width: 1024px) {

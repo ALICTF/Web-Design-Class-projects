@@ -5,33 +5,45 @@ body {
     font-family: "IR-Yek-r" !important;
     direction: rtl;
 }
+
 header {
     height: 450px;
-    background-image: url(../IMG/Bg-header.jpg);
+    background-image: url(../IMG/background.jpg);
     background-size: cover;
 }
-.text-12{
+
+.text-12 {
     font-size: 12px;
 }
-.text-14{
+
+.text-14 {
     font-size: 14px;
 }
+
 .navbar {
     background-color: rgba(0, 0, 0, 0.7);
 }
+
 .pattern-header {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "IR-Yek-b" !important;
 }
+
 .aa {
     width: fit-content;
     display: block;
     position: relative;
     padding: 0.2em 0;
 }
+
 .aa::after {
     content: '';
     position: absolute;
@@ -43,67 +55,106 @@ h1,h2,h3,h4,h5,h6{
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
 }
+
 li .aa::after {
-    opacity :1;
+    opacity: 1;
     transform: scale(0);
     transform-origin: center;
 }
 
 li .aa:hover::after,
 li .aa:focus::after {
-    transform: scale(1);}
+    transform: scale(1);
+}
 
 li a i {
     cursor: pointer;
 }
+
 li a i:hover {
     cursor: pointer;
 }
-p{
+
+p {
     line-height: 1.8rem;
 }
-#main-pattern{
-    background: url(./../IMG/Shape1.png) no-repeat top right;
-    background-position-y: 300px ;
+
+#main-pattern {
+    background: url(./../IMG/backabi.png) no-repeat top right;
+    background-position-y: 300px;
 }
-.mt-custom{
+
+.mt-custom {
     margin-top: 150px !important;
 }
 
-footer{
+footer {
     height: 650px;
-    background-image: url(../IMG/Hue_Saturation1.png);
+    background: url(../IMG/footerimg.jpg) no-repeat center;
     background-size: cover;
 }
+
 .pattern-footer {
     background-color: rgba(0, 0, 0, 0.8);
 }
-.w-custom{
-width: 75%;
+
+.w-custom {
+    width: 75%;
 }
-.w-custom2{
+
+.w-custom2 {
     width: fit-content;
-    }
+}
 
-.copy-right{
-background-color: #000;
-height: 150px;
-    }
+.copy-right {
+    background-color: #000;
+    height: 150px;
+}
 
-@media (max-width:1024px){
-    .w-custom{
+.pattern-gallery1 {
+    background: url(../IMG/hover1.jpg) no-repeat center;
+    background-size: cover;
+    height: 250px;
+}
+
+.pattern-gallery2 {
+    background: url(../IMG/hover3.jpg) no-repeat center;
+    background-size: cover;
+    height: 250px;
+}
+
+.pattern-gallery3 {
+    background: url(../IMG/hover2.jpg) no-repeat center;
+    background-size: cover;
+    height: 250px;
+}
+
+.pattern-gallery4 {
+    background: url(../IMG/hover4.jpg) no-repeat center;
+    background-size: cover;
+    height: 250px;
+}
+.pattern-gallery{
+    background-color: rgba($color: #000000, $alpha: .7);
+}
+@media (max-width:1024px) {
+    .w-custom {
         width: 100%;
     }
-    #main-pattern{
+
+    #main-pattern {
         background: none;
     }
-    #main-pattern .text-white{
+
+    #main-pattern .text-white {
         color: #000 !important;
     }
-    .mt-custom{
+
+    .mt-custom {
         margin-top: 20px;
     }
-    #main-pattern .btn-light.text-info{
+
+    #main-pattern .btn-light.text-info {
         background-color: rgb(13, 202, 240);
         color: #fff !important;
     }
