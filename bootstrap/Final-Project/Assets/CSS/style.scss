@@ -21,6 +21,7 @@ header {
 
 section{
     background-color: #f6f6f6;
+    height: 400px;
     
 }
 .text-12 {
@@ -105,7 +106,7 @@ li a i:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #0ae;
+    background-color: rgb(240, 221, 13);
 
     background-image: -webkit-gradient(linear, 0 0, 0 100%,
             color-stop(.5, rgba(255, 255, 255, .2)),
@@ -118,5 +119,9 @@ li a i:hover {
         background-color: #213B56;
         background-size: cover;
     }
-
+    section{
+        background-color: #f6f6f6;
+        height: auto;
+        
+    }
 }
