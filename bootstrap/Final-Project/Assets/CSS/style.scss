@@ -1,0 +1,122 @@
+@import "fontface";
+
+body {
+    font-family: "IR-Yek-r" !important;
+    direction: rtl !important;
+}
+.bg-navy {
+    background-color: #213B56;
+    background-size: cover;
+}
+.bg-navy0 {
+    height: 450px;
+    background-color: #213B56;
+    background-size: cover;
+}
+header {
+    height: 450px;
+    background-color: #213B56;
+    background-size: cover;
+}
+
+section{
+    background-color: #f6f6f6;
+    
+}
+.text-12 {
+    font-size: 12px;
+}
+
+.text-14 {
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "IR-Yek-b" !important;
+}
+
+.aa {
+    width: fit-content;
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+}
+
+.aa::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: rgb(240, 221, 13);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.offcanvas-body li {
+    display: flex;
+    justify-content: center;
+}
+
+.offcanvas-body li a {
+
+    color: #000 !important;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+li .aa::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+li .aa:hover::after,
+li .aa:focus::after {
+    transform: scale(1);
+}
+
+li a i {
+    cursor: pointer;
+}
+
+li a i:hover {
+    cursor: pointer;
+}
+
+.bg-custom{
+    background-color:rgb(240, 221, 13);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0ae;
+
+    background-image: -webkit-gradient(linear, 0 0, 0 100%,
+            color-stop(.5, rgba(255, 255, 255, .2)),
+            color-stop(.5, transparent), to(transparent));
+}
+
+@media (max-width:1024px) {
+    header {
+        height: auto;
+        background-color: #213B56;
+        background-size: cover;
+    }
+
+}
