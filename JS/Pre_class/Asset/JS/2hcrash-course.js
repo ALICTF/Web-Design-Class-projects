@@ -106,25 +106,142 @@
 // JSON Java Script Object Notation
 
 
-const product=[
-    {id : 1,
-    title : "book1" ,
-    price : 43 ,
-    exixst : true},
+// const product=[
+//     {id : 1,
+//     title : "book1" ,
+//     price : 43 ,
+//     exixst : true},
 
-    {id : 2,
-    title : "book2" ,
-    price : 51 ,
-    exixst : true},
+//     {id : 2,
+//     title : "book2" ,
+//     price : 51 ,
+//     exixst : true},
 
-    {id : 3,
-    title : "book3" ,
-    price : 26 ,
-    exixst : true}
-]
+//     {id : 3,
+//     title : "book3" ,
+//     price : 26 ,
+//     exixst : true}
+// ]
 
-const json = JSON.stringify(product)
-const njson = JSON.parse(json)
-console.log(json);
+// const json = JSON.stringify(product)
+// const njson = JSON.parse(json)
+// console.log(json);
+
+
+
+// loops
+
+// const product=[
+//     {id : 1,
+//     title : "book1" ,
+//     price : 43 ,
+//     exixst : true},
+
+//     {id : 2,
+//     title : "book2" ,
+//     price : 51 ,
+//     exixst : true},
+
+//     {id : 3,
+//     title : "book3" ,
+//     price : 26 ,
+//     exixst : true}
+// ]
+
+
+
+// for (let i = 0 ; i<product.length ; i++ ){
+//     console.log(product[i].title);
+// }
+
+
+
+//conditions
+
+// const price = 120
+// const newPrice=  120
+
+
+// if(newPrice>price){
+//     console.log("discount added")
+// }else if(newPrice<price) {
+//     console.log("checked");
+// }else{
+//     console.log("no discount");
+// }
+
+
+
+// functions
+
+// function addProduct(title,price){
+//     console.log(`title : ${title}  price : ${price}`);
+// }
+// addProduct('ali' , 16)
+
+// function addProduct(title = 'book2',price= 99){
+//     return `title : ${title} - price : ${price}`
+// }
+
+// const a = addProduct()
+// console.log(a);
+
+// const addProduct = (title,price) => {
+//     return `title : ${title} - price : ${price}`
+// }
+
+// const a = addProduct('ali' , 12)
+// console.log(a);
+
+// const addProduct = (title,price) =>`title : ${title} - price : ${price}`
+// const a = addProduct('ali' , 12)
+// console.log(a);
+
+
+
+
+
+//array methods
+
+// const product=[
+//     {id : 1,
+//     title : "book1" ,
+//     price : 43 ,
+//     exixst : true},
+
+//     {id : 2,
+//     title : "book2" ,
+//     price : 51 ,
+//     exixst : true},
+
+//     {id : 3,
+//     title : "book3" ,
+//     price : 26 ,
+//     exixst : true}
+// ]
+//forEach
+
+// product.forEach((item)=>{
+//     console.log(item.title);
+// })
+
+
+//Map
+
+// const productMap = product.map((item)=>{
+//     return item.title
+// })
+// console.log(productMap)
+
+
+//filter
+
+// const filter1 = product.filter((item)=>{
+//     return item.exixst === true
+// })
+
+// console.log(filter1);
+
+
 
 
