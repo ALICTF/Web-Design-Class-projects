@@ -156,13 +156,13 @@
 
 
 // While
-let x = Number(prompt("adad ro vared konid : " ))
-let a = 1
-while (a<=x){
-    if (a%2==0){
-        document.write(`<div style='width:100px; height=100px;background-color:pink; display:inline-block; margin:5px 5px ; text-align:center;'><h1>${a}</h1></div>`)
-    }else{
-        document.write(`<div style='width:100px; height=100px;background-color:gray; display:inline-block; margin:5px 5px ; text-align:center;'><h1>${a}</h1></div>`)
-    }
-    a++
-}
+// let x = Number(prompt("adad ro vared konid : " ))
+// let a = 1
+// while (a<=x){
+//     if (a%2==0){
+//         document.write(`<div style='width:100px; height=100px;background-color:pink; display:inline-block; margin:5px 5px ; text-align:center;'><h1>${a}</h1></div>`)
+//     }else{
+//         document.write(`<div style='width:100px; height=100px;background-color:gray; display:inline-block; margin:5px 5px ; text-align:center;'><h1>${a}</h1></div>`)
+//     }
+//     a++
+// }
