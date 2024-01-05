@@ -53,13 +53,78 @@
 
 //array , array methods
 
-const title = 'car'
-const price = 122
-const exists = true
-const products = [title,price,exists]
+// const title = 'car'
+// const price = 122
+// const exists = true
+// const products = [title,price,exists]
 
-products [3] =89
+// products [3] =89
+// products.push('product 1 ')
+// products.unshift('product 2')
+// products.pop()
+// console.log(products.length);
 
-console.log(products);
+// const products = ['car',122,true]
+// const [title, ... other] = products
+// console.log(title);
+// console.log(other);
+
+
+//object
+
+// const products = {
+//     title : "book" ,
+//     price : 123 ,
+//     exixst : true
+// }
+
+// const {title , ... other} = products
+// console.log(title);
+// console.log(other);
+
+
+// arrays and objects
+// const product=[
+//     {id : 1,
+//     title : "book1" ,
+//     price : 43 ,
+//     exixst : true},
+
+//     {id : 2,
+//     title : "book2" ,
+//     price : 51 ,
+//     exixst : true},
+
+//     {id : 3,
+//     title : "book3" ,
+//     price : 26 ,
+//     exixst : true}
+// ]
+// console.log(product);
+
+
+// JSON Java Script Object Notation
+
+
+const product=[
+    {id : 1,
+    title : "book1" ,
+    price : 43 ,
+    exixst : true},
+
+    {id : 2,
+    title : "book2" ,
+    price : 51 ,
+    exixst : true},
+
+    {id : 3,
+    title : "book3" ,
+    price : 26 ,
+    exixst : true}
+]
+
+const json = JSON.stringify(product)
+const njson = JSON.parse(json)
+console.log(json);
 
 
