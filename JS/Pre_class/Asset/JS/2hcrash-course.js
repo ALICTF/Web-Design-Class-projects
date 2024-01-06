@@ -219,10 +219,10 @@
 //     price : 26 ,
 //     exixst : true}
 // ]
-//forEach
 
+// forEach
 // product.forEach((item)=>{
-//     console.log(item.title);
+    // console.log(item.title);
 // })
 
 
@@ -243,5 +243,67 @@
 // console.log(filter1);
 
 
+// OOP , Constructor
+
+// function Product (title , price){
+//     this.title = title 
+//     this.price = price 
+//     this.productInfo = function (){
+//         return `the book ${this.title} is priced at $${this.price}`
+//     }
+// }
+
+// const a = new Product('Book 1',65)
+// console.log(a.productInfo());
 
 
+// class
+
+// class Product{
+//     constructor(title,price){
+//         this.title=title
+//         this.price=price
+//     }
+//     productInfo (){
+//         return `the book ${this.title} is priced at $${this.price}`
+//     }
+
+// }
+
+
+
+
+
+
+
+//Web Front-End
+
+
+//DOM Document Object Model
+
+// const form = document.getElementById('form')
+// const form = document.getElementsByClassName('container')
+// const form = document.getElementsByTagName('div')
+// const form = document.querySelector('#form')
+// const form = document.querySelectorAll('div')
+// console.log(form);
+
+
+//project
+
+const form = document.querySelector("#form")
+const title = document.querySelector("#title")
+const price = document.querySelector("#price")
+const product = document.querySelector("#products")
+
+const functionAdd = (event) =>{
+    event.preventDefault()
+    const li = document.createElement("li")
+    const productInfo = document.createTextNode(`title ${title.value} price ${price.value}`)
+    li.appendChild(productInfo)
+    product.appendChild(li)
+    title.value = ""
+    price.value = ""
+}
+
+form.addEventListener("submit" , functionAdd)
