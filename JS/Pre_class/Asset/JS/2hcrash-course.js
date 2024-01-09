@@ -271,11 +271,6 @@
 // }
 
 
-
-
-
-
-
 //Web Front-End
 
 
@@ -384,14 +379,63 @@
 // }
 
 
-//factorial challenge
+//factorial challenge  & recusion
 
-function factorial(number){
-    let result = 1
-    for (let i = 0; i<number ; i++){
-        result = result*(number -i)
-    }
-    return result
-}
-console.log(factorial(3))
-console.log(factorial(4))
+// function factorial(number){
+//     let result = 1
+//     for (let i = 0; i<number ; i++){
+//         result = result*(number -i)
+//     }
+//     return result
+// }
+// console.log(factorial(3))
+// console.log(factorial(4))
+
+// function factorial(number){
+//     if (number===0){
+//         return 1
+//     }
+//     return number * factorial(number-1)
+// }
+// console.log(factorial(3))
+
+
+
+//closures
+
+// function createUser(){
+//     const user = "masood"
+
+//     return function(){
+//         console.log(user);
+//     }
+// }
+// const create = createUser()
+// create()
+
+
+//Asynchronous
+
+// let number = 12
+// number = 20 
+// console.log(20);
+// function message(){
+//     console.log("message");
+// }
+// setTimeout(message,3000)
+// console.log("message2")
+
+
+//callback
+
+// function info(title , price , cb){
+//     const result = title + " " + price
+//     cb(result)
+// }
+
+// info("book" , 99 , function (res){
+//     console.log(res)
+// })
+
+
+//promises
