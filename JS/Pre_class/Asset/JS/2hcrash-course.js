@@ -289,21 +289,109 @@
 // console.log(form);
 
 
-//project
+//exercise 1
 
-const form = document.querySelector("#form")
-const title = document.querySelector("#title")
-const price = document.querySelector("#price")
-const product = document.querySelector("#products")
+// const form = document.querySelector("#form")
+// const title = document.querySelector("#title")
+// const price = document.querySelector("#price")
+// const product = document.querySelector("#products")
+// const functionAdd = (event) =>{
+//     event.preventDefault()
+//     const li = document.createElement("li")
+//     const productInfo = document.createTextNode(`title ${title.value} price ${price.value}`)
+//     li.appendChild(productInfo)
+//     product.appendChild(li)
+//     title.value = ""
+//     price.value = ""
+// }
 
-const functionAdd = (event) =>{
-    event.preventDefault()
-    const li = document.createElement("li")
-    const productInfo = document.createTextNode(`title ${title.value} price ${price.value}`)
-    li.appendChild(productInfo)
-    product.appendChild(li)
-    title.value = ""
-    price.value = ""
+// form.addEventListener("submit" , functionAdd)
+
+
+
+
+
+
+
+
+
+//Advance js youtube link : https://www.youtube.com/watch?v=dLay5jdoHno&t=116s
+
+// global scope & local scope
+
+// var product = 'book' // global scope
+// function info () {
+//     function printtitle () {
+//         console.log(product);
+//     }
+//     var price = 99 // local scope
+//     console.log(price);
+//     printtitle()
+// }
+// info()
+// printtitle()
+
+
+// Block scope
+
+// if (true){
+//     var price = 99
+//     console.log(price)
+// }
+// console.log(price)
+// if (true){
+//     let price = 99
+//     console.log(price)
+// }
+// console.log(price)
+
+// var hoisting
+
+
+
+// info()
+// console.log(price);
+// var price = 99
+// function info(){
+//     console.log("BOOK");
+// }
+// var info = function{
+//     console.log("BOOK");
+// }
+
+
+
+// let & const hoisting
+
+
+
+// console.log(title)
+// let title = "book"
+// console.log(title)
+
+
+
+//precedence
+
+// var title = "book"
+// function title(){
+//     console.log("title");
+// }
+
+// let title = "book"
+// function title(){
+//     console.log("title");
+// }
+
+
+//factorial challenge
+
+function factorial(number){
+    let result = 1
+    for (let i = 0; i<number ; i++){
+        result = result*(number -i)
+    }
+    return result
 }
-
-form.addEventListener("submit" , functionAdd)
+console.log(factorial(3))
+console.log(factorial(4))
