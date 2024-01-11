@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Vazir-FD';
+    src: url('../../../../HTML & CSS/Complete Projects/No 1/Assest/Font/iranyekanwebregular.ttf') format('ttf');
+    src: url('../../../../HTML & CSS/Complete Projects/No 1/Assest/Font/iranyekanwebregular.woff') format('woff');
+    src: url('../../../../HTML & CSS/Complete Projects/No 1/Assest/Font/iranyekanwebregular.eot') format('eot');
+}
+
+body {
+    font-family: 'Vazir-FD';
+    direction: rtl;
+}
+
+.container {
+    margin: auto;
+    width: 500px;
+    padding: 3rem 2rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    color: #1565c0;
+}
+
+form {
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 25px 5px rgb(0, 0, 0, 0.07);
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.6rem;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    font: inherit;
+    outline: none;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 0.6rem 1rem;
+    border: 0;
+    background: #1565c0;
+    color: #ffffff;
+    border-radius: 5px;
+    margin: 5px 0;
+    font: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 25px 5px rgb(0, 0, 0, 0.07);
+}
