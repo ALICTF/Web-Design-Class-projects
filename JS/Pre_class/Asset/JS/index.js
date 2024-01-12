@@ -166,3 +166,48 @@
 //     }
 //     a++
 // }
+
+
+// 10 + 9 + 8 + 7 + ...
+// let x = Number(prompt("x...!"))
+// let sumNum = 0
+// for(let i = 0 ; i<=x ; i++){
+//     sumNum += i 
+//     console.log(sumNum);
+// }
+// console.log(sumNum);
+
+// let y = Number(prompt("x...!"))
+// let mulNum = 1
+// for(let i = 1 ; i<=y ; i++){
+//     mulNum*=i
+// }
+// console.log(mulNum);
+
+// let userUl = Number(prompt("enter the number of UL .... "))
+// let data = ""
+// document.write("<ul>")
+// for(let i = 0 ; i <= userUl ; i++){
+//     data += `<li> ${i} </li>`
+// }
+// document.write(data)
+// document.write("</ul>")
+
+//prime
+// let x = Number(prompt("x...!"))
+// let flag = 0
+// for (let i = 0 ; i<=x ; i++){
+//     if (x%i == 0) {
+//         flag = 1
+//         console.log(i);
+//     }
+// }
+// console.log("***********************")
+// if(flag === 2){
+//     console.log(`x=${x} is prime`)
+// } else{
+//     console.log(`x=${x} is not prime`);
+// }
+
+
+
