@@ -17,13 +17,45 @@ body {
   width: 100vh;
 }
 
+.calc-main {
+  border-radius: 30px;
+  width: 400px;
+  height: 600px;
+  border: 2px solid rgb(1, 235, 252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0px 0px 100px rgb(1, 235, 252), inset 0px 0px 10px rgb(1, 235, 252), 0px 0px 5px rgb(255, 255, 255);
+  animation: flicker 2s linear infinite;
+}
+
 .calc-box-numbers {
   justify-items: center;
   justify-content: center;
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-areas: "adad15 adad18 adad11 adad12" "adad8  adad9  adad10 adad17" "adad5  adad6  adad7  adad17" "adad2  adad3  adad4  adad16" "adad13 adad1  adad14 adad16";
-  gap: 5px;
+  gap: 10px;
+}
+
+.calc-box-display {
+  width: 300px;
+}
+
+.input-display {
+  width: 300px;
+  height: 100%;
+  background-color: #383838;
+  border: 1ex solid none;
+  margin: 0;
+  padding: 10px 30px;
+  color: #ffffff;
+  word-wrap: break-word;
+  outline: 7px solid #383838;
+  font-size: 17px;
+  transition: all 1s;
+  font-weight: bold;
 }
 
 .grid-item {
@@ -33,15 +65,53 @@ body {
   cursor: pointer;
   background-color: #000;
   border: silver 2px solid;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px #454545;
+}
+
+.grid-item:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #454545;
 }
 
 .grid-item1 {
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px #454545;
   font-size: larger;
   width: 100%;
   height: 100%;
   cursor: pointer;
   background-color: #000;
   border: silver 2px solid;
+}
+
+.grid-item1:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #454545;
+}
+
+#stars {
+  z-index: -1;
+  position: absolute;
+  background: transparent;
+  width: 200rem;
+  height: 200rem;
+}
+
+#stars::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 170%;
+  height: 500%;
+  animation: animStar 1200s linear infinite;
+}
+
+#stars::before {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+  opacity: 0.5;
 }
 
 .key-word-0 {
@@ -120,6 +190,42 @@ body {
   .main {
     height: 100%;
     width: 100%;
+  }
+}
+@keyframes flicker {
+  0% {
+    border: 2px solid rgb(1, 235, 252);
+    box-shadow: 0px 0px 100px rgb(1, 235, 252), inset 0px 0px 10px rgb(1, 235, 252), 0px 0px 5px rgb(255, 255, 255);
+  }
+  5% {
+    border: none;
+    box-shadow: none;
+  }
+  10% {
+    border: 2px solid rgb(1, 235, 252);
+    box-shadow: 0px 0px 100px rgb(1, 235, 252), inset 0px 0px 10px rgb(1, 235, 252), 0px 0px 5px rgb(255, 255, 255);
+  }
+  25% {
+    border: none;
+    box-shadow: none;
+  }
+  30% {
+    border: 2px solid rgb(1, 235, 252);
+    box-shadow: 0px 0px 100px rgb(1, 235, 252), inset 0px 0px 10px rgb(1, 235, 252), 0px 0px 5px rgb(255, 255, 255);
+  }
+  100% {
+    border: 2px solid rgb(1, 235, 252);
+    box-shadow: 0px 0px 100px rgb(1, 235, 252), inset 0px 0px 10px rgb(1, 235, 252), 0px 0px 5px rgb(255, 255, 255);
+  }
+}
+@keyframes animStar {
+  from {
+    transform: translateY(0);
+    rotate: 0;
+  }
+  to {
+    rotate: 600deg;
+    transform: translateY(-6000rem);
   }
 }
 
