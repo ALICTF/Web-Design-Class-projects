@@ -1,0 +1,169 @@
+@import "fontface";
+@import "_colors";
+
+body {
+    font-family: "IR-Yek-r" !important;
+    direction: ltr;
+    background-color: #2a2929 !important;
+}
+.main {
+    height: 100vh;
+    width: 100vh;
+}
+.calc-box-display {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border-radius: 50px ;
+    border: 2px solid rgb(1, 235, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 100px rgb(1, 235, 252), inset 0px 0px 10px rgb(1, 235, 252), 0px 0px 5px rgb(255, 255, 255);
+    animation: flicker 2s linear infinite;
+}
+.display-input{
+    border-radius: 50px ;
+    border: 2px solid rgb(1, 235, 252);
+    background-color: transparent;
+    position: absolute ; 
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.calc-box-numbers { 
+    justify-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+        "adad15 adad18 adad11 adad12"
+        "adad8  adad9  adad10 adad17"
+        "adad5  adad6  adad7  adad17"
+        "adad2  adad3  adad4  adad16"
+        "adad13 adad1  adad14 adad16"
+    ;
+    gap: 5px;
+}
+.grid-item {
+    font-size: larger;
+    width: 70px;
+    height:70px;
+    cursor: pointer;
+    background-color: #000;
+    border: silver 2px solid;
+}
+.grid-item1 {
+    font-size: larger;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: #000;
+    border: silver 2px solid;
+}
+.key-word-0 {
+    grid-area: adad1;
+}
+.key-word-1 {
+    grid-area: adad2;
+}
+.key-word-2 {
+    grid-area: adad3;
+}
+.key-word-3 {
+    grid-area: adad4;
+}
+.key-word-4 {
+    grid-area: adad5;
+}
+.key-word-5 {
+    grid-area: adad6;
+}
+.key-word-6 {
+    grid-area: adad7;
+}
+.key-word-7 {
+    grid-area: adad8;
+}
+.key-word-8 {
+    grid-area: adad9;
+}
+.key-word-9 {
+    grid-area: adad10;
+}
+.key-word-B {
+    grid-area: adad11;
+}
+.key-word-C {
+    grid-area: adad12;
+}
+.key-word-d {
+    grid-area: adad13;
+}
+.key-word-E {
+    grid-area: adad14;
+}
+.key-word-M {
+    grid-area: adad15;
+}
+.key-word-N {
+    grid-area: adad16;
+}
+.key-word-P {
+    grid-area: adad17;
+}
+.key-word-Di {
+    grid-area: adad18
+}
+
+//#############################################//
+
+
+@keyframes flicker {
+    0% {
+        border: 2px solid rgb(1, 235, 252);
+        box-shadow: 0px 0px 100px rgb(1, 235, 252), inset 0px 0px 10px rgb(1, 235, 252), 0px 0px 5px rgb(255, 255, 255);
+    }
+    5% {
+        border: none;
+        box-shadow: none;
+    }
+    10% {
+        border: 2px solid rgb(1, 235, 252);
+        box-shadow: 0px 0px 100px rgb(1, 235, 252), inset 0px 0px 10px rgb(1, 235, 252), 0px 0px 5px rgb(255, 255, 255);
+    }
+    25% {
+        border: none;
+        box-shadow: none;
+    }
+    30% {
+        border: 2px solid rgb(1, 235, 252);
+        box-shadow: 0px 0px 100px rgb(1, 235, 252), inset 0px 0px 10px rgb(1, 235, 252), 0px 0px 5px rgb(255, 255, 255);
+    }
+    100% {
+        border: 2px solid rgb(1, 235, 252);
+        box-shadow: 0px 0px 100px rgb(1, 235, 252), inset 0px 0px 10px rgb(1, 235, 252), 0px 0px 5px rgb(255, 255, 255);
+    }
+}
+@keyframes iconflicker {
+    0% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 0.2;
+    }
+    10% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.2;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
