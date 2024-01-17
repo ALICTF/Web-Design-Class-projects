@@ -19,21 +19,27 @@ ul {
 }
 
 li:nth-child(2n) {
-    width: 100px;
-    height: 20px;
+    width: 200px;
+    height: 40px;
     list-style: none;
     background-color: rgb(221, 255, 0);
     animation: li1 1s ease-in-out 1;
     margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 li:nth-child(2n+1) {
-    width: 100px;
-    height: 20px;
+    width: 200px;
+    height: 40px;
     list-style: none;
     background-color: aqua;
     animation: li2 1s ease-in-out 1;
     margin: 10px auto;
+        display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
