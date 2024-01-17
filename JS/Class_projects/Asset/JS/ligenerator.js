@@ -11,7 +11,7 @@ function clickBtn(){
         document.querySelector("ul").appendChild(document.createElement("li")).innerHTML =`it is li number : ${i}`
         
     }
-    flag=true
+    // flag=true
 }
 
 

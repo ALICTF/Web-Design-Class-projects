@@ -19,27 +19,35 @@ ul {
 }
 
 li:nth-child(2n) {
+    color: black;
     width: 200px;
     height: 40px;
     list-style: none;
-    background-color: rgb(221, 255, 0);
+    background-color: rgb(255, 234, 0);
     animation: li1 1s ease-in-out 1;
     margin: 10px auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 500;
+    border-radius: 50px;
+    box-shadow: 1px 1px 5px 3px #ddf505;
 }
 
 li:nth-child(2n+1) {
+    border-radius: 50px;
+    font-weight: 500;
+    color: white;
     width: 200px;
     height: 40px;
     list-style: none;
-    background-color: aqua;
+    background-color: rgb(204, 0, 255);
     animation: li2 1s ease-in-out 1;
     margin: 10px auto;
         display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 1px 1px 5px 3px rgb(162, 66, 186);
 }
 
 button {
