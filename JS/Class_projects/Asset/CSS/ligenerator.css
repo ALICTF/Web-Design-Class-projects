@@ -32,8 +32,9 @@ li:nth-child(2n) {
     font-weight: 500;
     border-radius: 50px;
     box-shadow: 1px 1px 5px 3px #ddf505;
+    cursor: pointer;
+    transition: 0.1s;
 }
-
 li:nth-child(2n+1) {
     border-radius: 50px;
     font-weight: 500;
@@ -48,6 +49,16 @@ li:nth-child(2n+1) {
     justify-content: center;
     align-items: center;
     box-shadow: 1px 1px 5px 3px rgb(162, 66, 186);
+    cursor: pointer;
+    transition: 0.1s;
+}
+li:nth-child(2n+1):hover{
+    transform:translateX(10px);
+    transition: 0.1s;
+}
+li:nth-child(2n):hover{
+    transform:translateX(-10px);
+    transition: 0.1s;
 }
 
 button {
