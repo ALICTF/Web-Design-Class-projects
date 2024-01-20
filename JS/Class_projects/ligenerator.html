@@ -10,25 +10,58 @@
 </head>
 
 <body>
-
-    <section class="container mt-5" >
-        
-<div class="row ">
-    <div class="col-12 mt-5 mb-5"><h1 class="text-center">Welcome to li tag Generator</h1></div>
-    <div class="col-12 text-center  "><button onclick="clickBtn()" class=" ">click me to create li</button></div>
-    <div id="div" class="col-12 mx-auto">
-        <ul id="ulTag" class="mx-auto mt-5 p-0">
-        </ul>        
+    <div class="container-fluid">
+        <div class="row position-fixed row-custom ">
+            <div class="col-12 text-center">
+                <h3 class="h1-serch" >Wanna search ?</h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-2 text-center">
+                    <button class="btn-yes" data-bs-toggle="modal" data-bs-target="#exampleModal">Search</button>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+
+    <section class="container mt-5">
+        <div class="row ">
+            <div class="col-9 mt-5 mb-5 mx-auto">
+                <h1 class="text-center h1-title">Welcome to li tag Generator</h1>
+            </div>
+            <div class="col-12 text-center "><button onclick="clickBtn()" class="button-main" >click me to
+                    create li</button>
+            </div>
+            <div id="div" class="col-12 mx-auto">
+                <ul id="ulTag" class="mx-auto mt-5 p-0">
+                </ul>
+            </div>
+        </div>
 
     </section>
 
 
 
-
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title border-bottom-0" id="exampleModalLabel">Search engine</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input class='form-control ' onchange='searchInput(event)'></input>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Dismiss</button>
+                    <onclick= type="button" class="btn btn-primary"
+                    data-bs-dismiss="modal">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="Asset/JS/ligenerator.js"></script>
+    <script src="Asset/JS/bootstrap.bundle.js"></script>
 </body>
 
 </html>

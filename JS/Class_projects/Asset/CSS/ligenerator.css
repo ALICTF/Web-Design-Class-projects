@@ -2,8 +2,17 @@ body {
     background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
     height: 100vh;
 }
-
-h1 {
+.h1-serch{
+    color: #29dbbc;
+}
+.btn-yes{
+    background-color: #5d5d89;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    padding: 5px 15px;
+}
+.h1-title {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0 auto;
     font-size: 3.5rem;
@@ -16,6 +25,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 0.1s;
 }
 
 li:nth-child(2n) {
@@ -61,7 +71,7 @@ li:nth-child(2n):hover{
     transition: 0.1s;
 }
 
-button {
+.button-main {
     --border-radius: 15px;
     --border-width: 4px;
     appearance: none;
@@ -76,7 +86,7 @@ button {
     z-index: 2;
 }
 
-button::after {
+.button-main::after {
     --m-i: linear-gradient(#000, #000);
     --m-o: content-box, padding-box;
     content: "";
@@ -105,19 +115,23 @@ button::after {
     animation: rotate-hue linear 500ms infinite;
     animation-play-state: running;
 }
-
+.row-custom{
+    top: 8%;
+    left: 0%;
+    rotate: -25deg;
+}
 @keyframes rotate-hue {
     to {
         filter: hue-rotate(1turn);
     }
 }
 
-button,
-button::after {
+.button-main,
+.button-main::after {
     box-sizing: border-box;
 }
 
-button:active {
+.button-main:active {
     --border-width: 5px;
 }
 
