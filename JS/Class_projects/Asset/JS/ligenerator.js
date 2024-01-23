@@ -16,17 +16,26 @@ function clickBtn() {
     flag = true
 }
 function searchInput(ev){
-    var inputValue = ev.currentTarget.value
-    var listItem = document.getElementsByTagName('li')
-    console.log(listItem.length);
-    for (var i = 0; i < listItem.length; i++)
-        if (!listItem[i].textContent.includes(inputValue)) {
-            listItem[i].style.display = "none"
-            // alert(`please search in range 0 to ${listItem.length}`)
-        } else {
-            listItem[i].style.display = ""
-        }
-
+    // var inputValue = ev.currentTarget.value
+    // var listItem = document.getElementsByTagName('li')
+    // console.log(listItem.length);
+    // for (var i = 0; i < listItem.length; i++)
+    //     if (!listItem[i].textContent.includes(inputValue)) {
+    //         listItem[i].style.display = "none"
+    //         // alert(`please search in range 0 to ${listItem.length}`)
+    //     } else {
+    //         listItem[i].style.display = ""
+    //     }
+    let searchVal = ev.currentTarget.value
+    let itemsList = document.querySelectorAll('li')
+    itemsList.forEach((item)=>{
+        if(!item.textContent.toLowerCase().includes(searchVal.toLowerCase
+            )){
+                item.style.display="none"
+                }else{
+                    item.style.display=""
+                    }
+                    })
 }
 
 
