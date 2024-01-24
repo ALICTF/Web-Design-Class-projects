@@ -15,14 +15,15 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-6 mx-auto mt-5 pt-5">
+        <div class="col-lg-6 mx-auto mt-5 ">
             <label>Title :</label>
-            <input type="text" class="form-control my-2">
+            <input type="text" class="form-control my-2" onkeyup="valid()" id="titleToDo" >
             <label >Content :</label>
-            <textarea class="form-control my-2"></textarea>
-            <button class="btn btn-success mt-3" >Add To List</button>
+            <textarea class="form-control my-2" onkeyup="valid()" id="ContentToDo"></textarea>
+            <button class="btn btn-success mt-3" disabled id="btnSub" >Add To List</button>
         </div>
     </div>
+    <div class="row res mx-auto"></div>
 </div>
 
 
