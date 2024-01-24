@@ -209,5 +209,16 @@
 //     console.log(`x=${x} is not prime`);
 // }
 
+// function printData (){
+//     let x = 10
+//     return x
+// }
+// printData()
 
+let info = (fName , lName , faName , age ) =>{
+    console.log(`adasdsd${fName}asdasdasds${faName}asdadasd${lName}asdadadsa${age}`);
+}
+info("asd","asde","ffvc",23)
+info("wseweq","asdasd","asdwe",56)
+info("asd","asdas","asdasdsad",43)
 
