@@ -1,23 +1,33 @@
-var listItems = [
-    { id: 1, title: 'title-1', content: 'content-1', img: 'Asset/IMG/sectionimg.png', date: new Date().toLocaleString('fa') },
-    { id: 2, title: 'title-2', content: 'content-2', img: 'Asset/IMG/sectionimg.png', date: new Date().toLocaleString('fa') },
-    { id: 3, title: 'title-3', content: 'content-3', img: 'Asset/IMG/sectionimg.png', date: new Date().toLocaleString('fa') },
-    { id: 4, title: 'title-4', content: 'content-4', img: 'Asset/IMG/sectionimg.png', date: new Date().toLocaleString('fa') }
-]
-listItems.forEach(item => {
-    document.querySelector('.res').innerHTML += `
-        <div class='col-lg-3  my-3 '>
-        <div class="card" style="width: 18rem;">
-        <img src="${item.img}" class="card-img-top">
-        <div class="card-body">
-        <h5 class="card-title">${item.title}</h5>
-        <p class="card-text">${item.content}</p>
-        <p>${item.date}</p>
-        <button class="btn btn-danger" onclick="removeItem(${item.id},event)">remove</button>
-        </div>
-        </div>
-        </div>`
-})
+// var listItems = [
+//     { id: 1, title: 'title-1', content: 'content-1', img: 'Asset/IMG/sectionimg.png', date: new Date().toLocaleString('fa') },
+//     { id: 2, title: 'title-2', content: 'content-2', img: 'Asset/IMG/sectionimg.png', date: new Date().toLocaleString('fa') },
+//     { id: 3, title: 'title-3', content: 'content-3', img: 'Asset/IMG/sectionimg.png', date: new Date().toLocaleString('fa') },
+//     { id: 4, title: 'title-4', content: 'content-4', img: 'Asset/IMG/sectionimg.png', date: new Date().toLocaleString('fa') }
+// ]
+
+const http = new XMLHttpRequest();
+var url = "https://fakestoreapi.com/products"
+http.open("GET",url,true)
+http.send()
+http.onload= (res) =>{
+    let listItems = JSON.parse(res.currentTarget.response)
+    listItems.forEach(item => {
+        document.querySelector('.res').innerHTML += `
+            <div class='col-lg-3  my-3 '>
+            <div class="card  w-100"  >
+            <img src="${item.image}"  class="card-img-top   w-75 mx-auto h-100"  >
+            <div class="card-body">
+            <h5 class="card-title">${item.title}</h5>
+            <p>Price : $${item.price}</p>
+            <button class="btn btn-success" disabled onclick="removeItem(${item.id},event)">Add to cart</button>
+            </div>
+            </div>
+            </div>`
+    })
+}
+
+
+
 var valid = () => {
     let title = document.querySelector("#titleToDo").value.trim();
     let content = document.querySelector("#ContentToDo").value.trim();
