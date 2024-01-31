@@ -57,10 +57,6 @@
 //         </div>
 //         </div>`
 // }
-// const http = new XMLHttpRequest();
-// 
-// http.open("GET",url,true)
-// http.send()
 
 
 
