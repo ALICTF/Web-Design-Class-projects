@@ -58,14 +58,14 @@
 //         </div>`
 // }
 
-
-
-
-
+// var removeItem = (idItem, ev) => {
+    //     ev.currentTarget.parentElement.parentElement.parentElement.remove()
+    //     listItems = listItems.filter(item => item.id == idItem)
+    // } 
 
 const getData = async()=>{
-    var url = "https://fakestoreapi.com/products"
-    let fetchReq = await fetch(url,{method: 'GET',})
+    let url = "https://fakestoreapi.com/products"
+    let fetchReq = await fetch(url,{method: 'GET'})
     let response = await fetchReq.json();
     response.forEach(item => {
         document.querySelector('.res').innerHTML += `
@@ -75,14 +75,32 @@ const getData = async()=>{
             <div class="card-body">
             <h5 class="card-title">${item.title}</h5>
             <p>Price : $${item.price}</p>
-            <button class="btn btn-success"  onclick="removeItem(${item.id},event)">More info</button>
+            <a href="toDoList2.html?idProduct=${item.id}" target="_blank"><button class="btn btn-success"  onclick="removeItem(${item.id},event)">More info</button></a>
             </div>
             </div>
             </div>`
     })
 }
 
-var removeItem = (idItem, ev) => {
-    ev.currentTarget.parentElement.parentElement.parentElement.remove()
-    listItems = listItems.filter(item => item.id == idItem)
-} 
+const getDataSingle = async()=>{
+    let serachParams = window.location.search;
+    let params = new URLSearchParams(serachParams)
+    let productId = params.get("idProduct")
+    let url = `https://fakestoreapi.com/products/${productId}`
+    let fetchReq = await fetch(url,{method: 'GET'})
+    let response = await fetchReq.json();
+
+        document.querySelector('.res-single').innerHTML += `
+            <div class='col-lg-8 mx-auto my-3 '>
+            <div class="card  w-100"  >
+            <img src="${response.image}"  class="card-img-top   w-75 mx-auto h-100"  >
+            <div class="card-body">
+            <h5 class="card-title">${response.title}</h5>
+            <p>Price : $${response.price}</p>
+            <p>${response.description}</p>
+            <a href="toDoList2.html?idProduct=${response.id}" target="_blank"><button class="btn btn-success" ">add to cart</button></a>
+            </div>
+            </div>
+            </div>`
+    
+}
