@@ -63,15 +63,34 @@
     //     listItems = listItems.filter(item => item.id == idItem)
     // } 
 
+
+
 const getData = async()=>{
+    const skelet = ()=>{
+        debugger
+        let skeleton = document.querySelector(".skeleton")
+        let counter = 8
+        let i = 1
+        while(counter>=i){
+            skeleton.innerHTML += "<div class='col-lg-3 my-3'><div class='cards'><div class='card is-loading'><div class='image'></div><div class='content'><p></p><h2></h2></div></div></div></div>"
+            i++
+        }
+    }
+    skelet()
+    let skeleton = document.querySelector(".skeleton")
     let url = "https://fakestoreapi.com/products"
     let fetchReq = await fetch(url,{method: 'GET'})
     let response = await fetchReq.json();
+    if (!fetchReq){
+        skeleton.classList = "d-block"
+    }else{
+        skeleton.classList= "row mt-5 skeleton d-none"
+    }
     response.forEach(item => {
         document.querySelector('.res').innerHTML += `
             <div class='col-lg-3  my-3 '>
             <div class="card  w-100"  >
-            <img src="${item.image}"  class="card-img-top   w-75 mx-auto h-100"  >
+            <img src="${item.image}"  class="card-img-top   w-50 mx-auto h-100"  >
             <div class="card-body">
             <h5 class="card-title">${item.title}</h5>
             <p>Price : $${item.price}</p>
@@ -83,18 +102,23 @@ const getData = async()=>{
 }
 
 const getDataSingle = async()=>{
+    spinner = document.querySelector(".spinnerJs")
     let serachParams = window.location.search;
     let params = new URLSearchParams(serachParams)
     let productId = params.get("idProduct")
     let url = `https://fakestoreapi.com/products/${productId}`
     let fetchReq = await fetch(url,{method: 'GET'})
     let response = await fetchReq.json();
-
+    if (!fetchReq){
+        spinner.classList = "d-block"
+    }else{
+        spinner.classList= "row mt-5 skeleton d-none"
+    }
         document.querySelector('.res-single').innerHTML += `
-            <div class='col-lg-8 mx-auto my-3 '>
+            <div class='col-lg-6 mx-auto my-3 mt-5 '>
             <div class="card  w-100"  >
-            <img src="${response.image}"  class="card-img-top   w-75 mx-auto h-100"  >
-            <div class="card-body">
+            <img src="${response.image}"  class="card-img-top mx-auto mt-4"  >
+            <div class="card-body mt-5 text-center">
             <h5 class="card-title">${response.title}</h5>
             <p>Price : $${response.price}</p>
             <p>${response.description}</p>
