@@ -67,7 +67,6 @@
 
 const getData = async()=>{
     const skelet = ()=>{
-        debugger
         let skeleton = document.querySelector(".skeleton")
         let counter = 8
         let i = 1
@@ -109,6 +108,11 @@ const getDataSingle = async()=>{
     let url = `https://fakestoreapi.com/products/${productId}`
     let fetchReq = await fetch(url,{method: 'GET'})
     let response = await fetchReq.json();
+    console.log(response);
+    localStorage.setItem("products",fetchReq);
+    if(!localStorage.getItem("cart")){
+        localStorage.setItem("cart","[]")
+    }
     if (!fetchReq){
         spinner.classList = "d-block"
     }else{
@@ -122,9 +126,29 @@ const getDataSingle = async()=>{
             <h5 class="card-title">${response.title}</h5>
             <p>Price : $${response.price}</p>
             <p>${response.description}</p>
-            <a href="toDoList2.html?idProduct=${response.id}" target="_blank"><button class="btn btn-success" ">add to cart</button></a>
+            <button class="btn btn-success" id="liveToastBtn" onclick="addToCart()">add to cart</button>
             </div>
             </div>
             </div>`
-    
 }
+
+
+
+
+
+
+// const addToCart = (productIndex) => {
+// let products = JSON.parse(localStorage.getItem("products"))
+// let cart = JSON.parse(localStorage.getItem("cart"))
+// let product = products.find((product) => product.id == productIndex)
+// if (cart.lenght==0){
+//     cart.push(product);
+// }else{
+//     let res = cart.find(element => element.id == productId)
+//     if(res === undefined){
+//         cart.push(product)
+//     }
+// }
+//     localStorage.setItem("cart",JSON.stringify(cart))
+// }
+// addToCart(1)

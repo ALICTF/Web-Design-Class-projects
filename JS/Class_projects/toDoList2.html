@@ -30,15 +30,10 @@
                     </div>
                     <div class="col-md-5 my-auto">
                         <ul class="nav justify-content-end">
-
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class="fa fa-shopping-cart"></i> Cart (0)
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class="fa fa-heart"></i> Wishlist (0)
+                                <a class="nav-link " href="#">
+                                    <i class="fa fa-shopping-cart "></i><span
+                                        class="badge badge-secondary cart-add">(0)</span>
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
@@ -64,7 +59,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand d-block d-sm-block d-md-none d-lg-none" href="#">
-                    Funda Ecom
+
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -74,31 +69,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">All Categories</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">New Arrivals</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Featured Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Electronics</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Fashions</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Accessories</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Appliances</a>
+                            <a class="nav-link" href="JS/Class_projects/toDoList.html">Home</a>
                         </li>
                     </ul>
                 </div>
@@ -119,7 +90,19 @@
         </div>
     </div>
 
-
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="...">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div>
 
     <script src="Asset/JS/bootstrap.bundle.js"></script>
     <script src="Asset/JS/toDoList.js"></script>
