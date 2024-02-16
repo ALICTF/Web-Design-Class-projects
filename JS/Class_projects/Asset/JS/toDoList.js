@@ -63,7 +63,7 @@
     //     listItems = listItems.filter(item => item.id == idItem)
     // } 
 
-
+    var response;
 
 const getData = async()=>{
     const skelet = ()=>{
@@ -79,7 +79,7 @@ const getData = async()=>{
     let skeleton = document.querySelector(".skeleton")
     let url = "https://fakestoreapi.com/products"
     let fetchReq = await fetch(url,{method: 'GET'})
-    let response = await fetchReq.json();
+    response = await fetchReq.json();
     if (!fetchReq){
         skeleton.classList = "d-block"
     }else{
@@ -100,21 +100,17 @@ const getData = async()=>{
     })
 }
 
-const getDataSingle = async()=>{
+const getDataSingle = async()=>{ 
     spinner = document.querySelector(".spinnerJs")
     let serachParams = window.location.search;
     let params = new URLSearchParams(serachParams)
     let productId = params.get("idProduct")
     let url = `https://fakestoreapi.com/products/${productId}`
     let fetchReq = await fetch(url,{method: 'GET'})
-    let response = await fetchReq.json();
-    console.log(response);
-    localStorage.setItem("products",fetchReq);
-    if(!localStorage.getItem("cart")){
-        localStorage.setItem("cart","[]")
-    }
+    response = await fetchReq.json();
+    
     if (!fetchReq){
-        spinner.classList = "d-block"
+        spinner.classList.add("d-block")
     }else{
         spinner.classList= "row mt-5 skeleton d-none"
     }
@@ -136,19 +132,16 @@ const getDataSingle = async()=>{
 
 
 
+const addToCart = () => {
+    let listItems = localStorage.getItem("cartItems") ? JSON.parse(localStorage.getItem("cartItems")) : [];
+    let findItem = listItems.find(item=> item.id == response.id)
+    if(findItem){
+        return
+    }
+    console.log(listItems);
+    listItems = listItems.push(response)
+    console.log(listItems);
 
-// const addToCart = (productIndex) => {
-// let products = JSON.parse(localStorage.getItem("products"))
-// let cart = JSON.parse(localStorage.getItem("cart"))
-// let product = products.find((product) => product.id == productIndex)
-// if (cart.lenght==0){
-//     cart.push(product);
-// }else{
-//     let res = cart.find(element => element.id == productId)
-//     if(res === undefined){
-//         cart.push(product)
-//     }
-// }
-//     localStorage.setItem("cart",JSON.stringify(cart))
-// }
-// addToCart(1)
+    localStorage.setItem('cartItem' , listItems)
+    
+}
