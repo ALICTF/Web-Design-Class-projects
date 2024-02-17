@@ -63,6 +63,13 @@
     //     listItems = listItems.filter(item => item.id == idItem)
     // } 
 
+
+
+
+
+
+
+
     var response;
 
 const getData = async()=>{
@@ -133,15 +140,29 @@ const getDataSingle = async()=>{
 
 
 const addToCart = () => {
+    let toast = document.querySelector("#ToastAddToCart")
+    let toastBody = document.querySelector("#ToastAddToCart .toast-body")
+    let toastItem = bootstrap.Toast.getOrCreateInstance(toast)
     let listItems = localStorage.getItem("cartItems") ? JSON.parse(localStorage.getItem("cartItems")) : [];
     let findItem = listItems.find(item=> item.id == response.id)
     if(findItem){
+    toastBody.innerHTML=`<p class="mb-0 bg-danger">this item is exist</p>`
+    toastItem.show()
         return
     }
+    toastBody.innerHTML=`<p class="mb-0">add to Cart</p>`
+    toastItem.show()
     console.log(listItems);
     listItems = listItems.push(response)
     console.log(listItems);
-
     localStorage.setItem('cartItem' , listItems)
-    
+    countItems()
+}
+// function countItems(){
+//     let count = JSON.parse(localStorage.getItem("cartItems")).length
+//     document.querySelector(".cart-add").innerText= count
+// }
+// countItems()
+const showMenu =() =>{
+    document.querySelector(".menu").classList.toggle("open")
 }

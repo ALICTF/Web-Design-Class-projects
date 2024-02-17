@@ -22,7 +22,7 @@
                         <form role="search">
                             <div class="input-group">
                                 <input type="search" placeholder="Search your product" class="form-control" />
-                                <button class="btn bg-white" type="submit">
+                                <button class="btn bg-white" type="submit" >
                                     <i class="fa fa-search"></i>
                                 </button>
                             </div>
@@ -31,9 +31,9 @@
                     <div class="col-md-5 my-auto">
                         <ul class="nav justify-content-end">
                             <li class="nav-item">
-                                <a class="nav-link " href="#">
+                                <a class="nav-link " href="cart.html">
                                     <i class="fa fa-shopping-cart "></i><span
-                                        class="badge badge-secondary cart-add">(0)</span>
+                                        class="badge badge-secondary cart-add">0</span>
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
@@ -69,7 +69,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="JS/Class_projects/toDoList.html">Home</a>
+                            <a class="nav-link" href="toDoList.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showMenu()">Menu</a>
                         </li>
                     </ul>
                 </div>
@@ -80,6 +83,9 @@
         <div class="row mt-5 skeleton">
     </div>
     <div class="row res mt-4"></div>
+    </div>
+    <div class="menu mt-5">
+<button class="btn-close mt-5" onclick="showMenu()"></button>
     </div>
     <script src="Asset/JS/bootstrap.bundle.js"></script>
     <script src="Asset/JS/toDoList.js"></script>
