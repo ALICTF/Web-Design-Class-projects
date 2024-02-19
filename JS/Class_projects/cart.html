@@ -3,9 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Asset/CSS/bootstrap.css">
+    <link rel="stylesheet" href="Asset/CSS/all.min.css">
+    <link rel="stylesheet" href="Asset/CSS/toDoList.css">
     <title>Cart</title>
 </head>
-<body>
-    
+<body onload="getDataCart()">
+    <div class="main-navbar shadow-sm sticky-top">
+        <div class="top-navbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2 my-auto d-none d-sm-none d-md-block d-lg-block">
+                        <h5 class="brand-name">Simple Shop</h5>
+                    </div>
+                    <div class="col-md-5 my-auto">
+                        <form role="search">
+                            <div class="input-group">
+                                <input type="search" placeholder="Search your product" class="form-control" />
+                                <button class="btn bg-white" type="submit" >
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-5 my-auto">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link " href="cart.html">
+                                    <i class="fa fa-shopping-cart "></i><span
+                                        class="badge badge-secondary cart-add">0</span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-user"></i> Username
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa fa-list"></i> My Orders</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa fa-heart"></i> My Wishlist</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa fa-shopping-cart"></i> My
+                                            Cart</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand d-block d-sm-block d-md-none d-lg-none" href="#">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showMenu()">Menu</a>
+                        </li>
+                    </ul>
+                    <ul class="pt-2 timer">Time</ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row res-cart">
+<div class="alert alert-danger mt-5 d-none" id="emptyView">there is no item </div>
+        </div>
+    </div>
+    <div class="menu mt-5">
+        <button class="btn-close mt-5" onclick="showMenu()"></button>
+            </div>
+        <script src="Asset/JS/bootstrap.bundle.js"></script>
+        <script src="Asset/JS/toDoList.js"></script>
+        <script src="Asset/JS/jquery-3.7.1.slim.min.js"></script>
 </body>
 </html>
