@@ -42,7 +42,19 @@ img{
     color: #000;
     font-size: 15px;
 }
-
+.menu{
+    position: fixed;
+    right: -400px;
+    width: 300px;
+    height: 100vh;
+    background-color: #2874f0;
+    z-index: 100;
+    top:0;
+    transition: 0.5s;
+}
+.open{
+    right: 0px;
+}
 @media only screen and (max-width: 600px) {
     .main-navbar .top-navbar .nav-link{
         font-size: 12px;
