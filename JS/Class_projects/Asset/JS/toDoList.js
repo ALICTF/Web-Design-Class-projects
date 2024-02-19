@@ -36,7 +36,7 @@ const getData = async()=>{
                 </div>
                 </div>`
         })
-    },10000)
+    },5000)
 }
 const getDataSingle = async()=>{ 
     spinner = document.querySelector(".spinnerJs")

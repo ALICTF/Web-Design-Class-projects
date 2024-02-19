@@ -1,0 +1,130 @@
+
+.card{
+    height: 450px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+img{
+    object-fit: contain;
+}
+
+body {
+    background-color: #f6f6f6;
+    min-height: 100vh;
+
+}
+
+.cards {
+    display: flex;
+}
+
+.card {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+    .image {
+        img {
+            max-width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+    }
+
+    .content {
+        padding: 20px 30px;
+    }
+}
+
+.card.is-loading {
+
+    .image,
+    h2,
+    p {
+        background: #eee;
+        background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+        border-radius: 5px;
+        background-size: 200% 100%;
+        animation: 1.5s shine linear infinite;
+    }
+
+    .image {
+        height: 200px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    h2 {
+        height: 30px;
+    }
+
+    p {
+        height: 100px;
+    }
+}
+
+.main-navbar{
+    border-bottom: 1px solid #ccc;
+}
+.main-navbar .top-navbar{
+    background-color: #2874f0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main-navbar .top-navbar .brand-name{
+    color: #fff;
+}
+.main-navbar .top-navbar .nav-link{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.main-navbar .top-navbar .dropdown-menu{
+    padding: 0px 0px;
+    border-radius: 0px;
+}
+.main-navbar .top-navbar .dropdown-menu .dropdown-item{
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+.main-navbar .top-navbar .dropdown-menu .dropdown-item i{
+    width: 20px;
+    text-align: center;
+    color: #2874f0;
+    font-size: 14px;
+}
+.main-navbar .navbar{
+    padding: 0px;
+    background-color: #ddd;
+}
+.main-navbar .navbar .nav-item .nav-link{
+    padding: 8px 20px;
+    color: #000;
+    font-size: 15px;
+}
+.menu{
+    position: fixed;
+    right: -400px;
+    width: 300px;
+    height: 100vh;
+    background-color: #2874f0;
+    z-index: 100;
+    top:0;
+    transition: 0.5s;
+}
+.open{
+    right: 0px;
+}
+@media only screen and (max-width: 600px) {
+    .main-navbar .top-navbar .nav-link{
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
+@keyframes shine {
+    to {
+        background-position-x: -200%;
+    }
+}
